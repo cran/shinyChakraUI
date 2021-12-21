@@ -65,6 +65,10 @@ isBoolean <- function(x){
   is.logical(x) && (length(x) == 1L) && !is.na(x)
 }
 
+isPositiveInteger <- function(x){
+  is.numeric(x) && length(x) == 1L && !is.na(x) && floor(x) == x && x != 0
+}
+
 emptyNamedList <- `names<-`(list(), character(0L))
 
 randomString <- function(size){
@@ -126,6 +130,8 @@ asShinyTag <- function(x){
   structure(x, class = "shiny.tag")
 }
 
+#' @importFrom htmltools HTML
+#' @noRd
 shinyTag <- function(name, attribs = emptyNamedList, children = list(), ...){
   if(invalidNamedDotsList(list(...))){
     stop(
@@ -135,6 +141,14 @@ shinyTag <- function(name, attribs = emptyNamedList, children = list(), ...){
   stopifnot(isString(name))
   stopifnot(isNamedList(attribs))
   stopifnot(isUnnamedList(children))
+  if("children" %in% names(attribs)){
+    child <- attribs[["children"]]
+    if(isShinyTag(child) && !isReactComponent(child)){
+      child <- HTML(as.character(child))
+    }
+    children <- append(children, list(child))
+    attribs[["children"]] <- NULL
+  }
   structure(
     list(
       name = name,

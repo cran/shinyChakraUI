@@ -228,6 +228,7 @@ withStates <- function(component, states){
 #'   \code{\link[shiny:shinyUI]{shinyUI}} function.
 #'
 #' @importFrom htmltools htmlDependency tags attachDependencies
+#' @importFrom fontawesome fa_html_dependency
 #' @export
 chakraPage <- function(...){
   attachDependencies(
@@ -246,7 +247,8 @@ chakraPage <- function(...){
         src = "www/css",
         stylesheet = "chakra.css",
         package = "shinyChakraUI"
-      )
+      ),
+      fa_html_dependency()
     )
   )
 }
@@ -333,78 +335,5 @@ chakraColorSchemes <- function(){
     "whatsapp",
     "twitter",
     "telegram"
-  )
-}
-
-#' @title Chakra icons
-#' @description List of Chakra icons.
-#'
-#' @return The names of the Chakra icons in a vector.
-#'
-#' @export
-#' @details See \href{https://chakra-ui.com/docs/media-and-icons/icon#all-icons}{all chakra icons}.
-#'
-#' @examples
-#' chakraIcons()
-chakraIcons <- function(){
-  c(
-    "AddIcon",
-    "ArrowBackIcon",
-    "ArrowDownIcon",
-    "ArrowForwardIcon",
-    "ArrowLeftIcon",
-    "ArrowRightIcon",
-    "ArrowUpIcon",
-    "ArrowUpDownIcon",
-    "AtSignIcon",
-    "AttachmentIcon",
-    "BellIcon",
-    "CalendarIcon",
-    "ChatIcon",
-    "CheckIcon",
-    "CheckCircleIcon",
-    "ChevronDownIcon",
-    "ChevronLeftIcon",
-    "ChevronRightIcon",
-    "ChevronUpIcon",
-    "CloseIcon",
-    "CopyIcon",
-    "DeleteIcon",
-    "DownloadIcon",
-    "DragHandleIcon",
-    "EditIcon",
-    "EmailIcon",
-    "ExternalLinkIcon",
-    "HamburgerIcon",
-    "InfoIcon",
-    "InfoOutlineIcon",
-    "LinkIcon",
-    "LockIcon",
-    "MinusIcon",
-    "MoonIcon",
-    "NotAllowedIcon",
-    "PhoneIcon",
-    "PlusSquareIcon",
-    "QuestionIcon",
-    "QuestionOutlineIcon",
-    "RepeatIcon",
-    "RepeatClockIcon",
-    "SearchIcon",
-    "Search2Icon",
-    "SettingsIcon",
-    "SmallAddIcon",
-    "SmallCloseIcon",
-    "SpinnerIcon",
-    "StarIcon",
-    "SunIcon",
-    "TimeIcon",
-    "TriangleDownIcon",
-    "TriangleUpIcon",
-    "UnlockIcon",
-    "UpDownIcon",
-    "ViewIcon",
-    "ViewOffIcon",
-    "WarningIcon",
-    "WarningTwoIcon"
   )
 }
