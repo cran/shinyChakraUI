@@ -1,6 +1,6 @@
 Package: shinyChakraUI
 Title: A Wrapper of the 'React' Library 'Chakra UI' for 'Shiny'
-Version: 1.1.0
+Version: 1.1.1
 Authors@R: c(
     person(given = "Stéphane",
            family = "Laurent",
@@ -34,7 +34,7 @@ Imports: htmltools, reactR, shiny, jsonlite, rlang, stringr, grDevices,
 Suggests: testthat (>= 3.0.0), V8
 Config/testthat/edition: 3
 NeedsCompilation: no
-Packaged: 2021-12-21 14:04:35 UTC; SDL96354
+Packaged: 2022-01-05 14:51:52 UTC; SDL96354
 Author: Stéphane Laurent [aut, cre],
   Segun Adebayo [cph] ('Chakra UI' library (https://chakra-ui.com/)),
   David Kaye [ctb] ('json-normalize.js'),
@@ -44,4 +44,4 @@ Author: Stéphane Laurent [aut, cre],
   Ionic (http://ionic.io/) [cph]
 Maintainer: Stéphane Laurent <laurent_step@outlook.fr>
 Repository: CRAN
-Date/Publication: 2021-12-21 14:30:02 UTC
+Date/Publication: 2022-01-05 15:30:06 UTC

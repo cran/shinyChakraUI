@@ -1,3 +1,8 @@
+# shinyChakraUI 1.1.1
+
+* Fixed `createStandaloneToast`, it didn't work.
+
+
 # shinyChakraUI 1.1.0
 
 * Added the range slider (`chakraRangeSlider`), provided by the new version of 

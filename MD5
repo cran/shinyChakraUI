@@ -1,6 +1,6 @@
-867148275f37604b4cc67770133a68ab *DESCRIPTION
+9df87a6361037a842b633190bf6b2564 *DESCRIPTION
 aafb4f4e9e9c2c1dd5d80d60eff895fc *NAMESPACE
-6f74e5f687cd0e9e829fce784d92ff7c *NEWS.md
+9b1cd4902afd110b70e244e2a6395b98 *NEWS.md
 a81904c1adc68a6db2d65c48b4b10342 *R/Icons.R
 452f1a966910d7f6cb012ce288882f76 *R/Tag.R
 e28428101b59919d403643fac583e541 *R/chakra.R
@@ -52,8 +52,8 @@ c5cce6925b23a7bb8187c4877ff2940e *inst/examples/SuperTinyIcons/ui.R
 381fef956189083a4c874e9fe8210f45 *inst/examples/jQuery/ui.R
 2267450542a79e879280df5d519ff82a *inst/rstudio/addins.dcf
 adc88e27d5eca2fb10bea80140d4bb04 *inst/www/css/chakra.css
-1f22c46ecf80236ec23f11403ae02a43 *inst/www/shinyChakraUI/chakra/chakra.js
-ae285fa3f52ecacd3445be3b4a930633 *inst/www/shinyChakraUI/chakra/chakra.js.map
+46c03712bd2e32811881e2567d5ab22b *inst/www/shinyChakraUI/chakra/chakra.js
+40a30be3b1de5d63a3b780293c2de4ec *inst/www/shinyChakraUI/chakra/chakra.js.map
 bf5f71fcdcd735805899cec099bba46d *man/Tag.Rd
 2ad6f1a8bcf8fd46eadee353fff78097 *man/chakraAlertDialog.Rd
 defb7c5d915ba09242274b0a7458270b *man/chakraAlertDialogOptions.Rd
